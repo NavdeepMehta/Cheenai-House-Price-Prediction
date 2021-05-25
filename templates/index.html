@@ -85,6 +85,9 @@ img {
         </marquee>
 <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
+	<div class="form-group">
+          {{ prediction_text }}
+        </div>
     	<form action='index.php' method=
         <br> 
         <div class="container">           
@@ -171,11 +174,6 @@ img {
 
    <br>
    <br>
-<div class="form-group">
-   {{ prediction_text }}
-<br>
-<br>
-</div>
 </div>
 </div>
 
